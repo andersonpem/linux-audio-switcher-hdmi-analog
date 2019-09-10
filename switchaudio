@@ -1,0 +1,25 @@
+#!/bin/bash
+#Verbose input
+if [ -z "$1" ]
+then
+      echo "Gambi audio switcher for Mint by AndersonPEM"
+      echo "This script switches audio between HDMI or Integrated Graphics Analog Audio"
+      echo "Type hdmi/h to switch your audio to HDMI or i/integrated to analog audio"
+      read -p "Type an Option: " opt
+else
+   opt=$1
+fi
+
+if [ $opt == "h" ] || [ $opt == "hdmi" ] 
+then
+   pactl set-card-profile 0 output:hdmi-stereo
+fi
+if [ $opt == "i" ] || [ $opt == "integrated" ]
+then
+   pactl set-card-profile 0 output:analog-stereo
+fi
+#Verbose output on interactive mode
+if [ -z "$1" ]
+    then
+    echo "Done."
+fi
