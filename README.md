@@ -31,6 +31,15 @@ Well, we got you covered. Make sure the repo is in a place that you won't delete
 This will make a symbolic link to the system's bin folder to the command **switchaudio** and the shorthand command **sad**. Then you'll be able to run it with a run command (usually alt+f2 on distros) or even set a shortcut in your window manager to make the audio output tweak. Your ability to tweak is the limit :)
 (You'll be asked your user's password. Make sure you have permissions to run sudo commands)
 
+So after running the above script tou'd be able to run this globally with no problem:
+
+```bash
+sad hdmi
+switchaudio h
+sad i
+switchaudio integrated
+```
+
 ### Contributing
 Want to improve this? Make a pull request and get in touch :)
 This is such a simplistic piece of code that I doubt it is even useful to someone else, but who knows ^^
