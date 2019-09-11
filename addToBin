@@ -1,2 +1,3 @@
 #!/bin/bash
 sudo ln -s $(realpath ./switchaudio) /usr/bin/switchaudio
+sudo ln -s $(realpath ./switchaudio) /usr/bin/sad
