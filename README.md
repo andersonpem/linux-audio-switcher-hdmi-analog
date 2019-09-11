@@ -24,7 +24,7 @@ And for integrated  output audio:
 ./switchaudio i
 ```
 ### I'm a lazy bastard, I don't wanna go to the repo folder to run the command. What should I do?
-Well, we got you covered. Make sure the repo is in an place that you won't delete and run the script:
+Well, we got you covered. Make sure the repo is in a place that you won't delete and run the script:
 ```bash
 ./addToBin
 ```
